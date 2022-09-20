@@ -3,42 +3,31 @@
 body {
   font-family: 'Open Sans';
   background: linear-gradient(90deg, #43E97B 0%, #38F9D7 100%);
-  border-radius: 4px;
-  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+
 }
 
 img {
-  width: 100%;
+  width: auto;
+  height: auto;
 }
 
 button {
   background: #FF3D71;
+  border-color: transparent;
   font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  text-align: center;
   color: white;
   border-radius: 42px;
-  width: 50%;
-  height: 56px;
+  width: 5rem;
+  height: 5vh; 
   cursor: pointer;
-}
-
-div .center {
-  margin: 0%;
-  position: center;
-}
-
-div .container {
-  position: relative;
-  height: 512px;
-}
-
-div .vertical-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
+}  
