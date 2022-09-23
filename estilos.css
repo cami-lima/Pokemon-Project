@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans'
+
 }
 
 .container {
@@ -22,7 +22,7 @@ img {
 
 button {
   background: #FF3D71;
-  border-color: transparent;
+  border-style: none;
   font-family: 'Open Sans';
   font-style: normal;
   color: white;
