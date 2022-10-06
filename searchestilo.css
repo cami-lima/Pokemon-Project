@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    margin: 20px auto 10px;
+    margin: 20px auto -20px;
     border-radius: 10px;
 }
 
@@ -8,6 +8,14 @@ html, body {
     font-family: 'Open Sans';
     text-align: center;
 
+}
+
+img {
+
+    background: white;
+    border-radius: 50px;
+    border-color: linear-gradient(90deg, #43E97B 0%, #38F9D7 100%);
+    font-family: 'Open Sans';
 }
 
 div#container {
@@ -18,8 +26,17 @@ div#container {
     width: 250px;
     background: linear-gradient(90deg, #43E97B 0%, #38F9D7 100%);
     border-radius: 10px;
-    margin: 5% auto 10px;
-    padding: 5px;
+    margin: auto;
+    padding: 10px;
     box-shadow: 3px 3px 5px black;
 }
 
+div#whitebox {
+
+    font-family: 'Open Sans';
+    background: white;
+    box-shadow: 3px 3px 5px black;
+    margin: auto;
+    box-sizing: border-box
+    
+}
