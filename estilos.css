@@ -20,9 +20,10 @@ img {
   height: auto;
 }
 
-button {
+a {
   background: #FF3D71;
   border-style: none;
+  text-align: center;
   font-family: 'Open Sans';
   font-style: normal;
   color: white;

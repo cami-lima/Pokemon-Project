@@ -5,7 +5,7 @@ function buttonFunction() {
 }
 
 function getRandomNumber(min, max){
-    let random = Math.floor(Math.random() * 807 +1);
+    let random = Math.floor(Math.random() * max +min);
     return `https://pokeapi.co/api/v2/pokemon/${random}`
 }      
 
@@ -18,22 +18,20 @@ function loadpk() {
         return response.json();
     })
     .then((data)=> {
-        // console.log(data);
-        // console.log(data.types);
-        // console.log(data.types[0]);
-        // console.log(data.types[0].type.name)
-        
-        // var tipo;
-        // for( tipo=0; tipo <=3; tipo ++){
-        //     console.log(tipo)
-        //     console.log(data.types[tipo].type.name)
-        // }
-
+    
         document.getElementById('nome').innerHTML = data['name'];
-        document.getElementById('HP').innerHTML = data['HP'] + ' HP';
+        for(let energia = 0; energia < data.stats.length; energia++ ){
+            document.getElementById('HP').innerHTML = data.stats[energia].base_stat + ' HP';
+        }
+
         document.getElementById('weight').innerHTML = data['weight'] + ' WEIGHT';
         document.getElementById('height').innerHTML = data['height'] + ' HEIGHT';
-        document.getElementById('types').innerHTML = data['type'] + ' TYPES';
+
+        let vazio = '';
+        for (let tipos = 0; tipos < data.types.length; tipos++) {
+                vazio = vazio + data.types[tipos].type.name + ' ,';
+                document.getElementById('types').innerHTML = vazio + ' TYPES';
+            }
 
         let img = data['sprites']['front_default']
         document.getElementById('pic').setAttribute('src', img);
