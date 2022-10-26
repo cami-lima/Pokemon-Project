@@ -10,33 +10,40 @@ html, body {
 
 }
 
-img {
+.pic {
 
     background: white;
     border-radius: 50px;
-    border-color: linear-gradient(90deg, #43E97B 0%, #38F9D7 100%);
+    border-style: solid;
     font-family: 'Open Sans';
 }
 
-div#container {
+.container {
 
     display: flex;
     flex-direction:column;
     align-items: center;
     width: 250px;
     background: linear-gradient(90deg, #43E97B 0%, #38F9D7 100%);
-    border-radius: 10px;
+    border-radius: 20px;
     margin: auto;
     padding: 10px;
-    box-shadow: 3px 3px 5px black;
+   
 }
 
-div#whitebox {
+.whitebox {
 
     font-family: 'Open Sans';
     background: white;
-    box-shadow: 3px 3px 5px black;
-    margin: auto;
-    box-sizing: border-box
+    margin: 5px auto 20px;
+    padding: 5px;
+    border-radius: 15px;
+    width: 250px;
     
+}
+
+img {
+    width: auto;
+    background-image: linear-gradient(#DB2C66 38px, white 5px) ;
+    border-radius: 50%;
 }

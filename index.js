@@ -19,22 +19,22 @@ function loadpk() {
     })
     .then((data)=> {
     
-        document.getElementById('nome').innerHTML = data['name'];
+        document.querySelector('h3.nome').innerHTML = data['name'];
         for(let energia = 0; energia < data.stats.length; energia++ ){
-            document.getElementById('HP').innerHTML = data.stats[energia].base_stat + ' HP';
+            document.querySelector('p.HP').innerHTML = data.stats[energia].base_stat + ' HP';
         }
 
-        document.getElementById('weight').innerHTML = data['weight'] + ' WEIGHT';
-        document.getElementById('height').innerHTML = data['height'] + ' HEIGHT';
+        document.querySelector('p.weight').innerHTML = data['weight'] + ' WEIGHT';
+        document.querySelector('p.height').innerHTML = data['height'] + ' HEIGHT';
 
         let vazio = '';
         for (let tipos = 0; tipos < data.types.length; tipos++) {
                 vazio = vazio + data.types[tipos].type.name + ' ,';
-                document.getElementById('types').innerHTML = vazio + ' TYPES';
+                document.querySelector('p.types').innerHTML = vazio + ' TYPES';
             }
 
         let img = data['sprites']['front_default']
-        document.getElementById('pic').setAttribute('src', img);
+        document.querySelector('img.pic').setAttribute('src', img);
     })
     .catch((erro) => {
         console.log('Erro' + erro);
