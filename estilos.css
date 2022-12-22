@@ -1,6 +1,7 @@
 
 body {
-  font-family: 'Open Sans'
+  font-family: 'Open Sans';
+  margin: auto;  
 
 }
 
@@ -29,6 +30,6 @@ a {
   color: white;
   border-radius: 42px;
   width: 5rem;
-  height: 5vh; 
+  height: 2rem; 
   cursor: pointer;
 }  

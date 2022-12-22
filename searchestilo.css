@@ -2,7 +2,6 @@ button {
     font-family: 'Open Sans';
     font-style: normal;
     border-style: none;
-    padding: auto;
     margin: 10px;
     background: #FF3D71;
     color: white; 
@@ -52,6 +51,7 @@ html, body {
     padding: 5px;
     border-radius: 20px;
     width: 250px;
+    cursor: pointer;
     
 }
 
