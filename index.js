@@ -1,14 +1,10 @@
 
-function buttonFunction() {
-    var b = document.createElement('BUTTON');
-    window.location.assign('http://127.0.0.1:5500/searchpage.html');
-}
-
 function getRandomNumber(min, max){
     let random = Math.floor(Math.random() * max +min);
     return `https://pokeapi.co/api/v2/pokemon/${random}`
 }      
 
+let pokemonSearched = {};
 
 function loadpk() {
     let url = getRandomNumber(1, 807);
@@ -18,31 +14,44 @@ function loadpk() {
         return response.json();
     })
     .then((data)=> {
+        pokemonSearched = data['name']
     
-        document.getElementById('nome').innerHTML = data['name'];
+        document.querySelector('h3.nome').innerHTML = data['name'].toUpperCase();
         for(let energia = 0; energia < data.stats.length; energia++ ){
-            document.getElementById('HP').innerHTML = data.stats[energia].base_stat + ' HP';
+            document.querySelector('p.HP').innerHTML = data.stats[energia].base_stat;
         }
+        console.log(data)
 
-        document.getElementById('weight').innerHTML = data['weight'] + ' WEIGHT';
-        document.getElementById('height').innerHTML = data['height'] + ' HEIGHT';
+        document.querySelector('p.weight').innerHTML = data['weight'];
+        document.querySelector('p.height').innerHTML = data['height'];
 
-        let vazio = '';
+        let empty = '';
         for (let tipos = 0; tipos < data.types.length; tipos++) {
-                vazio = vazio + data.types[tipos].type.name + ' ,';
-                document.getElementById('types').innerHTML = vazio + ' TYPES';
+                empty = empty + data.types[tipos].type.name + ' ,';
+                document.querySelector('p.types').innerHTML = empty;
             }
 
         let img = data['sprites']['front_default']
-        document.getElementById('pic').setAttribute('src', img);
+        document.querySelector('img.pic').setAttribute('src', img);    
     })
     .catch((erro) => {
         console.log('Erro' + erro);
     });
-   
+
 }
 
-document.createElement('btn1');
+function save(){
+    console.log('adicionou!')
+    console.log(pokemonSearched )
+    localStorage.setItem('infoPokemon', JSON.stringify(pokemonSearched));
+    let info = localStorage.getItem('infoPokemon');
+}
+
+
+
+
+
+
 
 
 
