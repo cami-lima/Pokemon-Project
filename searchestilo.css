@@ -1,6 +1,13 @@
+html, body {
+    font-family: 'Opens Sans', sans-serif;
+    
+}
+
+body {
+    margin: 0;
+}
+
 button {
-    font-family: 'Open Sans';
-    font-style: normal;
     border-style: none;
     margin: 10px;
     background: #FF3D71;
@@ -8,58 +15,24 @@ button {
     cursor: pointer;
 }
 
-
-*{
-    box-sizing: border-box;
-    margin: 40px auto -20px;
-    border-radius: 10px;
-}
-
-html, body {
-    font-family: 'Open Sans';
-    text-align: center;
-
-}
-
-.pic {
-
-    background: white;
-    border-radius: 50px;
-    border: 3px solid #43E97B;
-    font-family: 'Open Sans';
-}
-
 .container {
-
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    width: 250px;
+    position: absolute;
     background: linear-gradient(90deg, #43E97B 0%, #38F9D7 100%);
-    border-radius: 20px;
-    margin: auto;
-    padding: 10px;
-   
+    width: 360px;
+    height: auto;
+    margin: 3rem 20rem 0 30rem;
+    border-radius: 10px 10px 0 0;
+    padding: 10rem 0 0 0;
 }
 
-.whitebox {
+.whitebox{
+    background:  #F7F9FC;
+    
+}
 
-    font-family: 'Open Sans';
-    background: #F7F9FC;
+.textStyle {
+    text-align: center;
+    font-size: 18px;
     color: #2E3A59;
-    margin: -30px auto 20px;
-    padding: 5px;
-    border-radius: 20px;
-    width: 250px;
-    cursor: pointer;
-    
-}
-
-img {
-    width: auto;
-    
-}
-
-.lista {
-    flex-direction: column;
+    text-transform: uppercase;
 }
