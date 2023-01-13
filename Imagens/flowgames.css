@@ -1,0 +1,44 @@
+.color-text{
+    color: blueviolet;
+}
+
+h2{
+    margin-right: 23%;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 1px;
+}
+h4{
+    padding-top: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+}
+
+.picture{
+    width: 18rem;
+    height: 9rem;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+.informations{
+    display: flex;
+}
+
+.block{
+    width: 0.2cm;
+    height: 0.2cm;
+    background-color: blueviolet;
+
+}
+
+.text-informations{
+    padding-left: 5px;
+    padding-right: 40px;
+}
