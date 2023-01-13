@@ -9,22 +9,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon2</title>
 </head>
+    
 <body>
-    <button onclick="loadpk()">Search Pokémon</button>
 
-    <div id="container">
-        <h3 id="nome">Pokemon Name</h3>
-        <img id="pic">
+    <button onclick="loadpk()">Search Pokémon</button>  
 
-    </div>  
+    <div class="container">   
+        <div class="whitebox">
 
-        <div id="whitebox">
-            <p id="HP">HP</p>
-            <p id="weight">weight</p> 
-            <p id="height">height</p> 
-            <p id="types">types</p>
+            <div class="bodyInfo">  
 
+                <img class="pic"> 
+                <h3 class="nome textStyle">Pokemon Name</h3>
+
+            </div>    
+    
+            <div class="informationPokemon">
+
+                <div class="infoHP">
+    
+                    <p class="HP stripe textStyle">HP</p>
+                    <p class="stripe textStyle">""</p>
+
+                </div>    
+
+                <div class="stripe"></div>
+    
+                <div class="infoWeight">
+    
+                    <p class="weight stripe textStyle">WEIGHT</p> 
+                    <p class="stripe textStyle">""</p>
+    
+                </div>
+
+                <div class="stripe"></div>
+
+                <div class="infoHeight">   
+                    <p class="height stripe textStyle">HEIGHT</p>
+                    <p class="stripe textStyle">""</p>      
+        
+                </div>
+    
+            </div >
+
+            <div class="typesPokemon">
+
+            <p class="types textUppercase">TYPES</p>
+            <p class="textType1 textUppercase">TIPO1</p>
+            <p class="textType2 textUppercase">TIPO2</p>
+
+            </div>
+    
+            <div>
+    
+                <img src="Imagens/pokeball (1).png" alt="pokeball" onclick="save()">
+    
+            </div>
         </div>
-
+       
+        
+    </div>       
+            
+          
 </body>
 </html>
