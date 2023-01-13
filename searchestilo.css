@@ -16,17 +16,20 @@ button {
 }
 
 .container {
-    position: absolute;
+    display: flex;
     background: linear-gradient(90deg, #43E97B 0%, #38F9D7 100%);
     width: 360px;
     height: auto;
-    margin: 3rem 20rem 0 30rem;
     border-radius: 10px 10px 0 0;
     padding: 10rem 0 0 0;
 }
 
 .whitebox{
     background:  #F7F9FC;
+    
+}
+
+.pic{
     
 }
 
