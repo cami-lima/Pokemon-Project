@@ -1,0 +1,85 @@
+.color-text{
+    color: blueviolet;
+}
+
+h2{
+    margin-right: 23%;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 1px;
+}
+h4{
+    padding-top: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+}
+
+.picture{
+    width: 18rem;
+    height: 9rem;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+.informations{
+    display: flex;
+}
+
+.block{
+    width: 0.2cm;
+    height: 0.2cm;
+    background-color: blueviolet;
+
+}
+
+.text-informations{
+    padding-left: 5px;
+    padding-right: 40px;
+}
+html, body {
+    font-family: 'Opens Sans', sans-serif;
+
+}
+
+body {
+    margin: 0;
+}
+
+button {
+    border-style: none;
+    margin: 10px;
+    background: #FF3D71;
+    color: white; 
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    background: linear-gradient(90deg, #43E97B 0%, #38F9D7 100%);
+    width: 360px;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    padding: 10rem 0 0 0;
+}
+
+.whitebox{
+    background:  #F7F9FC;
+
+}
+
+.pic{
+
+}
+
+.textStyle {
+    text-align: center;
+    font-size: 18px;
+    color: #2E3A59;
+    text-transform: uppercase;
+}
